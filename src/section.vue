@@ -23,6 +23,7 @@
                 <div class="card-column">
                     <div class="card-outter card-1">
                         <wwObject class="card-title card-title-1" v-bind:ww-object="section.data.cardTitle1" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
+
                         <div class="card-string"></div>
                         <!-- <div class="card" v-on:click="wwOnClickCard" data-card="1" ng-class="{'flipped':cardStatus[0].flipped}"> -->
                             <div class="card-content front">
@@ -30,14 +31,19 @@
                                 </wwObject>
                                 <wwObject class="content-title-1" v-bind:ww-object="section.data.contentTitle1" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
                                 
-                                <wwObject class="content-text-1" v-bind:ww-object="section.data.contentText1" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
-                                <div class="button-card">
-                                    <!-- <wwObject v-bind:ww-object="section.data.buttonCard" v-bind:section="section" ww-inside-ww-object="true" :ww-not-editable="textNotEditable" ww-default-object-type="ww-text" ww-object-types-allowed="['ww-text']"></wwObject> -->
-                                    <wwObject v-bind:ww-object="section.data.buttonCard" v-bind:section="section"></wwObject>
-                                </div>
-
+                                <wwObject class="content-text" v-bind:ww-object="section.data.contentText1" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
+                                <!-- <wwLayoutColumn tag="div" ww-default="ww-image" v-bind:ww-list="section.data.cardsWwObject[0]" class="ww-object-container">
+                                    <wwObject v-for="wwObject in section.data.cardsWwObject[0]" :key="wwObject.uniqueId" v-bind:ww-object="wwObject" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
+                
+                                </wwLayoutColumn> -->
+                             
                             </div>
+
                         <!-- </div> -->
+                    </div>
+                    <div class="button-card button-card-1">
+                                    <!-- <wwObject v-bind:ww-object="section.data.buttonCard" v-bind:section="section" ww-inside-ww-object="true" :ww-not-editable="textNotEditable" ww-default-object-type="ww-text" ww-object-types-allowed="['ww-text']"></wwObject> -->
+                      <wwObject v-bind:ww-object="section.data.buttonCard" v-bind:section="section"></wwObject>
                     </div>
                 </div>
 
@@ -51,13 +57,16 @@
                                 </wwObject>
                                 <wwObject class="content-title-2" v-bind:ww-object="section.data.contentTitle2" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>                              
                                 
-                                <wwObject class="content-text-2" v-bind:ww-object="section.data.contentText2" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
-                                <div class="button-card-2">
-                                    <wwObject v-bind:ww-object="section.data.buttonCard2" v-bind:section="section"></wwObject>
-                                </div>
+                                <wwObject class="content-text" v-bind:ww-object="section.data.contentText2" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
+                                <!-- <div class="ww-object-container" v-for="wwObject in section.data.cardsWwObject[1]" :key="wwObject.uniqueId">
+                                    <wwObject v-bind:ww-object="wwObject" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
+                                </div> -->
                             </div>
                         <!-- </div> -->
                     </div>
+                    <div class="button-card button-card-2">
+                                    <wwObject v-bind:ww-object="section.data.buttonCard2" v-bind:section="section"></wwObject>
+                                </div>
                 </div>
 
                 <div class="card-column">
@@ -69,13 +78,17 @@
                                   <wwObject class="background" v-bind:ww-object="section.data.card3Bg" v-bind:section="section" ww-category="background">
                                 </wwObject>
                                 <wwObject class="content-title-3" v-bind:ww-object="section.data.contentTitle3" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
-                              <wwObject class="content-text-3" v-bind:ww-object="section.data.contentText3" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
-                                <div class="button-card-3">
-                                    <wwObject v-bind:ww-object="section.data.buttonCard3" v-bind:section="section"></wwObject>
-                                </div>
+                              <wwObject class="content-text" v-bind:ww-object="section.data.contentText3" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
+                                <!-- <div class="ww-object-container" v-for="wwObject in section.data.cardsWwObject[2]" :key="wwObject.uniqueId">
+                                    <wwObject v-bind:ww-object="wwObject" v-bind:section="section" ww-default-object-type="ww-text"></wwObject>
+                                </div> -->
+                        
                             </div>
                         
                         <!-- </div> -->
+                    </div>
+                    <div class="button-card button-card-3">
+                      <wwObject v-bind:ww-object="section.data.buttonCard3" v-bind:section="section"></wwObject>
                     </div>
                 </div>
 
@@ -325,7 +338,6 @@ export default {
             en_GB: "Nous vous accompagnons au travers de nos 3 pôles!"
           },
           align: "center",
-          size: 2,
           color: "white"
         }
       });
@@ -395,7 +407,6 @@ export default {
             en_GB: "Voir le Pôle Conseil"
           },
           align: "center",
-          size: 1,
           color: "black"
         }
       });
@@ -622,17 +633,7 @@ export default {
   margin-bottom: 20px;
 }
 
-.feature_H .content-text-1 {
-  margin: 20px;
-  text-justify: inter-word;
-}
-
-.feature_H .content-text-2 {
-  margin: 20px;
-  text-justify: inter-word;
-}
-
-.feature_H .content-text-3 {
+.feature_H .content-text {
   margin: 20px;
   text-justify: inter-word;
 }
@@ -678,6 +679,7 @@ export default {
   padding-top: 40px;
   min-height: 100%;
   width: 100%;
+  height: 250px;
   overflow: hidden;
   border-radius: 7px;
 
@@ -704,52 +706,42 @@ export default {
 }
 
 .feature_H .button-card {
-  position: relative;
+  position: absolute;
   background-color: rgb(255, 255, 255);
   border-color: rgb(229, 115, 115);
   border-radius: 500px;
   border-style: solid;
   border-width: 2px;
   box-sizing: border-box;
-  font-size: 14px;
-  height: 36px;
   display: inline-block;
-
-  margin-left: 30%;
   line-height: 20px;
   padding: 5px 10px 10px 5px;
+  height: 36px;
+  bottom: 25px;
 }
 
-.feature_H .button-card-2 {
-  position: relative;
-  background-color: rgb(255, 255, 255);
-  border-color: rgb(229, 115, 115);
-  border-radius: 500px;
-  border-style: solid;
-  border-width: 2px;
-  box-sizing: border-box;
-  font-size: 14px;
-  height: 36px;
-  display: inline-block;
-  margin-left: 25%;
-  line-height: 20px;
-  padding: 5px 10px 10px 5px;
-}
+@media (max-width: 450px) {
+  .feature_H .button-card {
+    font-size: 14px;
+  }
 
-.feature_H .button-card-3 {
-  position: relative;
-  background-color: rgb(255, 255, 255);
-  border-color: rgb(229, 115, 115);
-  border-radius: 500px;
-  border-style: solid;
-  border-width: 2px;
-  box-sizing: border-box;
-  font-size: 14px;
-  height: 36px;
-  display: inline-block;
-  margin-left: 30%;
-  line-height: 20px;
-  padding: 5px 10px 10px 5px;
+  .feature_H .button-card-1 {
+    width: 170px;
+    margin-left: 25%;
+    top: 200px;
+  }
+
+  .feature_H .button-card-2 {
+    width: 250px;
+    margin-left: 15%;
+    bottom: 280px;
+  }
+
+  .feature_H .button-card-3 {
+    width: 170px;
+    margin-left: 25%;
+    bottom: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -760,9 +752,12 @@ export default {
 
   .feature_H .card-title {
     position: absolute;
-    width: 200px;
+    width: 60%;
     height: 50px;
-    top: -100px;
+    top: -130px;
+    font-size: 13px;
+    background-color: white;
+    line-height: 50px;
     z-index: 2;
   }
 
@@ -865,7 +860,7 @@ export default {
     -moz-transform: translateY(-100%);
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
-    border-left: 1px #9da1a5 solid;
+    border-left: 1px #000000 solid;
     z-index: 1;
   }
 
@@ -886,6 +881,30 @@ export default {
   }
   .feature_H .card-3 .card-string {
     height: 200px;
+  }
+
+  .feature_H .button-card {
+    font-size: 9px;
+  }
+  .feature_H .button-card-1 {
+    width: 15%;
+    margin-left: 8%;
+  }
+
+  .feature_H .button-card-2 {
+    width: 22%;
+    margin-left: 4%;
+  }
+
+  .feature_H .button-card-3 {
+    width: 15%;
+    margin-left: 7%;
+  }
+
+  @media (min-width: 1180px) {
+    .feature_H .button-card {
+      font-size: 15px;
+    }
   }
 }
 </style>
