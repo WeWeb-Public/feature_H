@@ -728,13 +728,13 @@ export default {
   .feature_H .button-card-1 {
     width: 170px;
     margin-left: 25%;
-    top: 200px;
+    top: 250px;
   }
 
   .feature_H .button-card-2 {
     width: 250px;
     margin-left: 15%;
-    bottom: 280px;
+    bottom: 330px;
   }
 
   .feature_H .button-card-3 {
