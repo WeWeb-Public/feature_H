@@ -319,8 +319,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Nos Métiers !",
-            en_GB: "Our Business !"
+            fr: "Nos Métiers !",
+            en: "Our Business !"
           },
           align: "center",
           size: 2,
@@ -334,8 +334,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Nous vous accompagnons au travers de nos 3 pôles!",
-            en_GB: "Nous vous accompagnons au travers de nos 3 pôles!"
+            fr: "Nous vous accompagnons au travers de nos 3 pôles!",
+            en: "Nous vous accompagnons au travers de nos 3 pôles!"
           },
           align: "center",
           color: "white"
@@ -348,8 +348,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Conseil",
-            en_GB: "Conseil"
+            fr: "Conseil",
+            en: "Conseil"
           },
           align: "center",
           size: 1,
@@ -371,8 +371,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Space Advisory",
-            en_GB: "Space Advisory"
+            fr: "Space Advisory",
+            en: "Space Advisory"
           },
           align: "center",
           size: 1,
@@ -386,9 +386,9 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR:
+            fr:
               "Définir les meilleurs options pour votre projet immobiier investisseurs ou utilisateurs ",
-            en_GB:
+            en:
               "Définir les meilleurs options pour votre projet immobiier investisseurs ou utilisateurs "
           },
           align: "justify",
@@ -403,8 +403,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Voir le Pôle Conseil",
-            en_GB: "Voir le Pôle Conseil"
+            fr: "Voir le Pôle Conseil",
+            en: "Voir le Pôle Conseil"
           },
           align: "center",
           color: "black"
@@ -417,8 +417,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Contractant Général",
-            en_GB: "Contractant Général"
+            fr: "Contractant Général",
+            en: "Contractant Général"
           },
           align: "center",
           size: 1,
@@ -440,8 +440,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Plug and Play",
-            en_GB: "Plug and Play"
+            fr: "Plug and Play",
+            en: "Plug and Play"
           },
           align: "center",
           size: 1,
@@ -455,9 +455,9 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR:
+            fr:
               "A vos côté depuis la conception jusau'à la réalisation de vos travaux clés en main",
-            en_GB:
+            en:
               "A vos côté depuis la conception jusau'à la réalisation de vos travaux clés en main"
           },
           align: "justify",
@@ -472,8 +472,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Voir le Pôle Contractant Général",
-            en_GB: "Voir le Pôle Contractant Général"
+            fr: "Voir le Pôle Contractant Général",
+            en: "Voir le Pôle Contractant Général"
           },
           align: "center",
           size: 1,
@@ -487,8 +487,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Change",
-            en_GB: "Change"
+            fr: "Change",
+            en: "Change"
           },
           align: "center",
           size: 1,
@@ -509,8 +509,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "F.O.P",
-            en_GB: "F.O.P"
+            fr: "F.O.P",
+            en: "F.O.P"
           },
           align: "center",
           size: 1,
@@ -524,9 +524,9 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR:
+            fr:
               "Focus On People, mettre les utilisateurs au cœur de la réflexion Workplace pour garentir le succè de votre pojet d'immobilier d'entreprise.",
-            en_GB:
+            en:
               "Focus On People, mettre les utilisateurs au cœur de la réflexion Workplace pour garentir le succè de votre pojet d'immobilier d'entreprise."
           },
           align: "justify",
@@ -541,8 +541,8 @@ export default {
         type: "ww-text",
         data: {
           text: {
-            fr_FR: "Voir le Pôle Change",
-            en_GB: "Voir le Pôle Change"
+            fr: "Voir le Pôle Change",
+            en: "Voir le Pôle Change"
           },
           align: "center",
           size: 1,
